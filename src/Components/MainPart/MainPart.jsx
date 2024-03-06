@@ -4,6 +4,7 @@ import fet3 from '../../../public/Thumbnail/Rectangle 18-22.png'
 import off1 from '../../../public/Offer/sliderUp_to_14__discount_on_Domestic_flights 2-1.png'
 import off2 from '../../../public/Offer/sliderUp_to_14__discount_on_Domestic_flights 2-2.png'
 import off3 from '../../../public/Offer/sliderUp_to_14__discount_on_Domestic_flights 2.png'
+import news from '../../../public/News letter/Isolation_Mode.png'
 
 const MainPart = () => {
     return (
@@ -75,6 +76,21 @@ const MainPart = () => {
                     </div>
                 </div>
                 <p className='text-7xl text-center '>.<span className='text-[#ffb700e8]'>.</span>.</p>
+            </div>
+
+            {/* Subscribe part */}
+            <div className='flex items-center gap-4 my-10'>
+                <div className='flex-1'>
+                    <img src={news} alt="" />
+                </div>
+                <div className='flex-1'>
+                    <h1 className='text-5xl font-bold'>Subscribe To Our Newsletter!</h1>
+                    <p className='my-4 text-[#70ADF0] font-bold text-lg'>Subscribe To Our Newsletter And Stay Updated</p>
+                    <label className="form-control">
+                    <input type="text" placeholder="Type here" className="input input-bordered w-[70%]" />
+                    </label>
+                    <button className='btn bg-[#ffb700de] hover:bg-[#FFB700] w-[70%] my-5 font-bold'>Subscribe</button>
+                </div>
             </div>
             
         </div>
