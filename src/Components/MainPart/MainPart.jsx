@@ -74,6 +74,7 @@ const MainPart = () => {
                         </div>
                     </div>
                 </div>
+                <p className='text-7xl text-center '>.<span className='text-[#ffb700e8]'>.</span>.</p>
             </div>
             
         </div>
