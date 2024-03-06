@@ -12,6 +12,14 @@ import test1 from '../../../public/testimonial/Rectangle 30.png'
 import test2 from '../../../public/testimonial/Rectangle 32.png'
 import test3 from '../../../public/testimonial/Rectangle 33.png'
 import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos, MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { BiStar } from "react-icons/bi";
+import air1 from '../../../public/Airlines Icon/american.png'
+import air2 from '../../../public/Airlines Icon/BBA.png'
+import air3 from '../../../public/Airlines Icon/Emirates.png'
+import air4 from '../../../public/Airlines Icon/Malaysia-1.png'
+import air5 from '../../../public/Airlines Icon/Malaysia.png'
+import air6 from '../../../public/Airlines Icon/Singapore Airlines.png'
+import air7 from '../../../public/Airlines Icon/Turkish Airlines.png'
 
 const MainPart = () => {
     return (
@@ -83,6 +91,97 @@ const MainPart = () => {
                     </div>
                 </div>
                 <p className='text-7xl text-center '>.<span className='text-[#ffb700e8]'>.</span>.</p>
+            </div>
+
+            {/* Populer Airlines part */}
+            <div>
+                <h1 className='text-4xl font-bold my-8'>Popular Airlines</h1>
+                <div className='grid grid-cols-4 gap-4'>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air1} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air1} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air1} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air2} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air3} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air4} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air5} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air6} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air7} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air1} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air1} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
+                    <img src={air1} alt="" />
+                    <div className=''>
+                        <h1>Biman Bangladesh Airlines</h1>
+                        <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
+                    </div>
+                </div>
+                </div>
             </div>
 
             {/* Travel Blog */}
