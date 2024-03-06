@@ -5,7 +5,7 @@ import { IoIosSearch } from "react-icons/io";
 const Header = () => {
     return (
         <div>
-          <div className="navbar bg-base-100 px-10">
+          <div className="navbar bg-base-100 px-16">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,7 +34,7 @@ const Header = () => {
 </div>  
 <div className='relative'>
         <img src={banner} alt="" />
-        <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-[80%]'>
+        <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-[88%]'>
           <h2 className='font-bold text-4xl text-left my-4 mx-7'>Welcome to <span className='text-[#026DE5]'>Airbook</span></h2>
         <div className='bg-white p-10 rounded-lg'>
         <div className='flex flex-row justify-between '>
