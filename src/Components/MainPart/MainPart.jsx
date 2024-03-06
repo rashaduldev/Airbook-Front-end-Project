@@ -1,6 +1,9 @@
 import fet1 from '../../../public/Thumbnail/Rectangle 181.png'
 import fet2 from '../../../public/Thumbnail/Rectangle 18-11.png'
 import fet3 from '../../../public/Thumbnail/Rectangle 18-22.png'
+import off1 from '../../../public/Offer/sliderUp_to_14__discount_on_Domestic_flights 2-1.png'
+import off2 from '../../../public/Offer/sliderUp_to_14__discount_on_Domestic_flights 2-2.png'
+import off3 from '../../../public/Offer/sliderUp_to_14__discount_on_Domestic_flights 2.png'
 
 const MainPart = () => {
     return (
@@ -41,6 +44,34 @@ const MainPart = () => {
                         <button className="btn bg-[#ffb700e8] hover:bg-[#FFB700] px-14">View More</button>
                         </div>
                     </div>
+                    </div>
+                </div>
+            </div>
+            
+            {/* Deals And Offers part */}
+            <div>
+                <h2 className='my-14 text-black font-bold text-3xl'>Deals And Offers</h2>
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
+                    <div className='flex shadow-xl rounded-lg items-center gap-4 cursor-pointer'>
+                        <img src={off3} alt="" />
+                        <div>
+                        <p className='font-bold my-3 text-[12px]'>With Bkash Payment Only</p>
+                        <h4 className='text-[#016DE4] font-bold'>Up to 40% Discount on the basefare Of Domestic</h4>
+                        </div>
+                    </div>
+                    <div className='flex shadow-xl rounded-lg items-center gap-4 cursor-pointer'>
+                        <img src={off1} alt="" />
+                        <div>
+                        <p className='font-bold my-3 text-[12px]'>With Bkash Payment Only</p>
+                        <h4 className='text-[#016DE4] font-bold'>Up to 40% Discount on the basefare Of Domestic</h4>
+                        </div>
+                    </div>
+                    <div className='flex shadow-xl rounded-lg items-center gap-4 cursor-pointer'>
+                        <img src={off2} alt="" />
+                        <div>
+                        <p className='font-bold my-3 text-[12px]'>With Bkash Payment Only</p>
+                        <h4 className='text-[#016DE4] font-bold'>Up to 40% Discount on the basefare Of Domestic</h4>
+                        </div>
                     </div>
                 </div>
             </div>
