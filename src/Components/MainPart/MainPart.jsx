@@ -20,6 +20,7 @@ import air4 from '../../../public/Airlines Icon/Malaysia-1.png'
 import air5 from '../../../public/Airlines Icon/Malaysia.png'
 import air6 from '../../../public/Airlines Icon/Singapore Airlines.png'
 import air7 from '../../../public/Airlines Icon/Turkish Airlines.png'
+import testi from '../../../public/testimonial/Rectangle 33.png'
 
 const MainPart = () => {
     return (
@@ -181,6 +182,25 @@ const MainPart = () => {
                         <p className='flex items-center gap-2'><BiStar /> 4(783 Review)</p>
                     </div>
                 </div>
+                </div>
+            </div>
+
+            {/* Tastemonials  */}
+            <div>
+                <h1 className='text-4xl font-bold my-10'>Testimonials</h1>
+                <div className='flex flex-col lg:flex-row w-[50%] mx-auto items-center gap-16'>
+                    <img src={testi} alt="" />
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut molestias, adipisci quos illo temporibus officiis alias impedit laudantium perspiciatis iste.</p>
+                        <h2>Emily</h2>
+                        <p>Adventure Enthusiast</p>
+                        <div className='flex flex-row items-center'>
+                        <BiStar />
+                        <BiStar />
+                        <BiStar />
+                        <BiStar />
+                        </div>
+                    </div>
                 </div>
             </div>
 
