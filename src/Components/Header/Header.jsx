@@ -1,11 +1,28 @@
 import img1 from '../../../public/Logo/LOGO.png'
 import banner from '../../../public/Hero Image/Rectangle 2.png'
 import { IoIosSearch } from "react-icons/io";
+import { useEffect, useState } from 'react';
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    // Add event listener for scroll
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove event listener when component is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
     return (
-        <div>
-          <div className="navbar bg-base-100 px-16">
+        <div className=''>
+          <div className={`fixed top-0 left-0 w-full navbar bg-base-100 px-16 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : ''}`} >
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
