@@ -2,6 +2,7 @@ import img1 from '../../../public/Logo/LOGO.png'
 import banner from '../../../public/Hero Image/Rectangle 2.png'
 import { IoIosSearch } from "react-icons/io";
 import { useEffect, useState } from 'react';
+import { FaRegCircle } from "react-icons/fa";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -56,8 +57,15 @@ const Header = () => {
         <div className='bg-white p-10 rounded-lg'>
         <div className='flex flex-col lg:flex-row justify-between lg:gap-96'>
             <div className='flex items-center gap-3 mt-5 mx-auto'>
-              <p className='btn'>One Way</p>
-              <p className='btn btn-primary'>Round Trip</p>
+              <div className='flex items-center btn'>
+              <FaRegCircle />
+              <p className=''>One Way</p>
+              </div>
+              <div className='flex items-center btn btn-primary'>
+              <FaRegCircle />
+              <p className=''>Round Trip</p>
+              </div>
+
             </div>
             <div className='flex items-center gap-5 my-6 mx-auto'>
               <select className='btn' name="" id="">
@@ -79,24 +87,24 @@ const Header = () => {
                 </div>
             </div>
             <div style={{border:'1px solid black'}} className='flex items-center text-left gap-5 w-64 rounded-lg p-2   '>
-                <h2 className='border-r-2'>DAC</h2>
+                <h2 className='border-r-2'>CBX</h2>
                 <div>
-                    <p>Dhaka</p>
-                    <p>Hazrat Shahajalal</p>
+                    <p>Coxs Bazar</p>
+                    <p>Coxs Bazar International</p>
                 </div>
             </div>
             <div style={{border:'1px solid black'}} className='flex items-center text-left gap-5 w-64 rounded-lg p-2   '>
-                <h2 className='border-r-2'>DAC</h2>
+                <h2 className='border-r-2'>03</h2>
                 <div>
-                    <p>Dhaka</p>
-                    <p>Hazrat Shahajalal</p>
+                    <p>October</p>
+                    <p>Tuesday,2023</p>
                 </div>
             </div>
             <div style={{border:'1px solid black'}} className='flex items-center text-left gap-5 w-64 rounded-lg p-2   '>
-                <h2 className='border-r-2'>DAC</h2>
+                <h2 className='border-r-2'>06</h2>
                 <div>
-                    <p>Dhaka</p>
-                    <p>Hazrat Shahajalal</p>
+                    <p>October</p>
+                    <p>Saturday,2023</p>
                 </div>
             </div>
             <div>
