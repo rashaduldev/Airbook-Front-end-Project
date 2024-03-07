@@ -25,9 +25,9 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 const MainPart = () => {
     return (
-        <div className="mt-24">
+        <div className="mt-[650px] md:mt-96 lg:mt-24">
             {/* Featured Dentinations part */}
-            <div className='mx-20'>
+            <div className='mx-5 lg:mx-20'>
                 <h1 className="text-black font-bold text-3xl my-3">Featured Dentinations</h1>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
                     <div className="card bg-base-100 shadow-2xl">
@@ -67,7 +67,7 @@ const MainPart = () => {
             </div>
             
             {/* Deals And Offers part */}
-            <div className='mx-20'>
+            <div className='mx-5 lg:mx-20'>
                 <h2 className='my-14 text-black font-bold text-3xl'>Deals And Offers</h2>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
                     <div className='flex shadow-xl rounded-lg items-center gap-4 cursor-pointer'>
@@ -96,9 +96,9 @@ const MainPart = () => {
             </div>
 
             {/* Populer Airlines part */}
-            <div className='mx-20'>
+            <div className='mx-5 lg:mx-20'>
                 <h1 className='text-4xl font-bold my-8'>Popular Airlines</h1>
-                <div className='grid grid-cols-4 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                 <div className='flex items-center gap-2 shadow-2xl rounded-lg p-3'>
                     <img src={air1} alt="" />
                     <div className=''>
@@ -189,19 +189,19 @@ const MainPart = () => {
             {/* Tastemonials  */}
             <div className='w-full'>
                 <h1 className='text-4xl font-bold my-10 mx-20'>Testimonials</h1>
-               <div className='flex items-center w-full p-32 bg-[#006CE4]'>
+               <div className='flex items-center w-full lg:p-32 bg-[#006CE4]'>
                 <div className='relative'>
                 <img className='opacity-40' src={testi} alt="" />
                 <BsArrowLeft className='text-5xl font-bold absolute top-[50%] text-white left-14' />
 
                 </div>
                <div className='flex flex-col lg:flex-row w-[60%] mx-auto items-center gap-16 bg-white rounded-lg shadow-2xl'>
-                    <img src={testi} alt="" />
+                    <img className='w-32 h-32 lg:w-auto lg:h-auto' src={testi} alt="" />
                     <div>
-                        <p className='text-xl'>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut molestias, adipisci quos illo temporibus officiis alias impedit laudantium perspiciatis iste."</p>
-                        <h2 className='text-lg font-bold mt-5'>Emily</h2>
-                        <p className='my-2'>Adventure Enthusiast</p>
-                        <div className='flex flex-row items-center'>
+                        <p className='lg:text-xl lg:text-left text-center'>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut molestias, adipisci quos illo temporibus officiis alias impedit laudantium perspiciatis iste."</p>
+                        <h2 className='text-lg font-bold lg:mt-5 lg:text-left text-center'>Emily</h2>
+                        <p className='my-2 lg:text-left text-center'>Adventure Enthusiast</p>
+                        <div className='flex flex-row items-center justify-center lg:justify-start'>
                         <BiStar />
                         <BiStar />
                         <BiStar />
@@ -217,7 +217,7 @@ const MainPart = () => {
             </div>
 
             {/* Travel Blog */}
-            <div className='my-10 relative mx-20'>
+            <div className='my-10 relative mx-5 lg:mx-20'>
                 <h1 className='text-4xl font-bold'>Travel Blog</h1>
                 <div className='mt-14 grid grid-cols-1 lg:grid-cols-3 gap-5'>
                  <div className="card card-compact bg-base-100 shadow-2xl">

@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
     return (
         <div className=''>
-          <div className={`fixed top-0 left-0 w-full navbar bg-base-100 px-16 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : ''}`} >
+          <div className={`fixed top-0 left-0 w-full navbar bg-base-100 lg:px-16 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : ''}`} >
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,16 +50,16 @@ const Header = () => {
   </div>
 </div>  
 <div className='relative'>
-        <img src={banner} alt="" />
-        <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-[88%]'>
+        <img className='h-56 w-full lg:h-auto' src={banner} alt="" />
+        <div className='absolute top-[450px] md:top-80 shadow-2xl lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-[88%]'>
           <h2 className='font-bold text-4xl text-left my-4 mx-7'>Welcome to <span className='text-[#026DE5]'>Airbook</span></h2>
         <div className='bg-white p-10 rounded-lg'>
-        <div className='flex flex-row justify-between '>
-            <div className='flex items-center gap-3'>
+        <div className='flex flex-col lg:flex-row justify-between lg:gap-96'>
+            <div className='flex items-center gap-3 mt-5 mx-auto'>
               <p className='btn'>One Way</p>
               <p className='btn btn-primary'>Round Trip</p>
             </div>
-            <div className='flex items-center gap-5'>
+            <div className='flex items-center gap-5 my-6 mx-auto'>
               <select className='btn' name="" id="">
                 <option value="">Traveller</option>
                 <option value="">New</option>
@@ -70,7 +70,7 @@ const Header = () => {
               </select>
             </div>
           </div>
-            <div className='flex flex-row gap-3 mt-6'>
+            <div className='flex flex-col md:flex-row lg:flex-row gap-3 mt-6 mx-auto justify-center'>
             <div style={{border:'1px solid black'}} className='flex items-center text-left gap-5 w-64 rounded-lg p-2   '>
                 <h2 className='border-r-2'>DAC</h2>
                 <div>
@@ -100,7 +100,7 @@ const Header = () => {
                 </div>
             </div>
             <div>
-           <p className='bg-[#FFB700] p-3 text-white rounded-lg mt-1 cursor-pointer'> <IoIosSearch className=' text-4xl' /></p>
+           <p className='bg-[#FFB700] p-3 w-20 h-14 text-white rounded-lg md:hidden lg:block mt-1 cursor-pointer mx-auto'> <IoIosSearch className=' text-4xl mx-auto' /></p>
             </div>
             </div>
         </div>
